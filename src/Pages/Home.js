@@ -2920,7 +2920,7 @@ const Home = () => {
 	const transport = webSocket('wss://mainnet.infura.io/ws/v3/50597910853247b38793be4ec6b05dc8')
 	const web3_mm = new Web3_mm(Web3_mm.givenProvider || 'https://mainnet.infura.io/v3/50597910853247b38793be4ec6b05dc8');
 
-	const web3_1155 = new Web3_1155(Web3_1155.givenProvider || 'https://base-mainnet.infura.io/v3/50597910853247b38793be4ec6b05dc8');
+	const web3_1155 = new Web3_1155(Web3_1155.givenProvider || 'https://responsive-fittest-water.base-mainnet.quiknode.pro/dc8bde64fcdc0963ee78c756104a3c7318677cac/');
 	//const web3_1155 = new Web3_1155(Web3_1155.givenProvider || 'https://polygon-mainnet.infura.io/v3/9aad89c8e515457ab8b7805f5da593ea');
 
 	const publicClient = createPublicClient({
@@ -3018,7 +3018,7 @@ const Home = () => {
 		if (imageUrls.length === 0) {
 			console.error("No images provided.");
 			return;
-	}
+		}
 
 		const canvas = document.createElement('canvas'); // Create a canvas dynamically
 		const ctx = canvas.getContext('2d');
@@ -3830,7 +3830,7 @@ const Home = () => {
 			let tokenIdArray_1155 = [];
 			const specialPowers = armoryList["Special Power"];
 			const droneList = armoryList["Drone"];
-			console.log(" fetcinsideh functions specialPowers : " + specialPowers);
+			console.log("inside fetch functions specialPowers : " + specialPowers);
 			console.log("inside fetch functions droneList : " + droneList);
 
 			setLoadingImgs2(1);
@@ -4420,11 +4420,11 @@ const Home = () => {
 												<>
 													{!(_choiceIndex === 0 || _choiceIndex === 1 || _choiceIndex === 2 || _loadingImgs2 > 0) && (
 														<button className='refresg-overlay'>
-															{/*<div className='txtR'>Select Your NFT to view the items</div>*/}
+															<div className='txtR'>Select Your NFT to view the items</div>
 														</button>
 													)}
 												</> : <button className='refresg-overlay'>
-													{/*<div className='txtR'>Select Your NFT to view the items</div>*/}
+												{/*<div className='txtR'>You need to have NFT to view the items</div>*/}
 												</button>
 											}
 										</> :
@@ -4608,11 +4608,11 @@ const Home = () => {
 													<>
 														{!(_choiceIndex === 0 || _choiceIndex === 1 || _choiceIndex === 2 || _loadingImgs2 > 0) && (
 															<button className='refresg-overlay'>
-																{/*<div className='txtR'>Select Your NFT to view the items</div>*/}
+																<div className='txtR'>Select Your NFT to view the items</div>
 															</button>
 														)}
 													</> : <button className='refresg-overlay'>
-														<div className='txtR'>You need to have NFT to view the items</div>
+														{/*<div className='txtR'>You need to have NFT to view the items</div>*/}
 													</button>
 												}
 											</> :
@@ -4842,7 +4842,7 @@ const Home = () => {
 									)}
 
 									<div className='view' onClick={handleViewClick}><span className='viewTxt'>View NFT</span> <img src={eye} /></div>
-									<div className='view' onClick={handleViewClickNFTs}><span className='viewTxt'>View My Armoury NFTs</span> <img src={eye} /></div>
+									<div className='view' onClick={handleViewClickNFTs}><span className='viewTxt'>View My Armory NFTs</span> <img src={eye} /></div>
 
 								</div>
 
